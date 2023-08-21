@@ -7,13 +7,12 @@ const primaryNumber = (n) => {
     for (let i = 1; i < num + 1; i++) {
       if (num % i === 0) {
         k++;
-        console.log(i);
       }
       if (k > 2) return false;
     }
     return true;
   }
-  console.log(isSimp(5));
+
   for (let i = 0; i < n + 1; i++) {
     res[i] = true;
   }
@@ -21,7 +20,6 @@ const primaryNumber = (n) => {
   for (let i = 2; i < n + 1; i++) {
     if (res[i] === true) {
       if (isSimp(i)) {
-        console.log(i, "fff");
         for (let j = i + i; j < n + 1; j += i) {
           res[j] = false;
         }
@@ -35,4 +33,4 @@ const primaryNumber = (n) => {
   return ans;
 };
 
-console.log(primaryNumber(30));
+// console.log(primaryNumber(30));
