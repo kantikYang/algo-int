@@ -11,7 +11,6 @@ const selectionSort = (target) => {
       }
     }
     [arr[i], arr[min[1]]] = [arr[min[1]], arr[i]];
-    console.log(min);
   }
   return arr;
 };
