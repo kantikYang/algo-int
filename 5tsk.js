@@ -30,4 +30,4 @@ const bfs = (obj) => {
   return res;
 };
 
-console.log(bfs(data));
+// console.log(bfs(data));
