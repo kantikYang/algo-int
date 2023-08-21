@@ -3,7 +3,7 @@ const binSearch = (arr, n) => {
   let r = arr.length;
   let mid;
   while (l < r) {
-    mid = Math.floor((l + r) / 2);
+    mid = Math.floor((l + r) / 2 + 1);
     if (arr[mid] === n) return mid;
 
     if (arr[mid] < n) {
@@ -13,7 +13,9 @@ const binSearch = (arr, n) => {
     }
   }
 
-  return false;
+  return -1;
 };
 
-// console.log(binSearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 3));
+// console.log(
+//   binSearch([2, 5, 7, 12, 23, 30, 34, 54, 65, 66, 76, 85, 222, 432, 777], 30)
+// );
