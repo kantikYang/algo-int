@@ -5,12 +5,13 @@ const selectionSort = (target) => {
   for (let i = 0; i < len; i++) {
     let min = [Infinity];
     for (let j = i; j < len; j++) {
-      if (arr[j] < min[0]) {
+      if (arr[j] <= min[0]) {
         min[0] = arr[j];
         min[1] = j;
       }
     }
     [arr[i], arr[min[1]]] = [arr[min[1]], arr[i]];
+    console.log(min);
   }
   return arr;
 };
