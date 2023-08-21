@@ -16,7 +16,7 @@ const sortB = (myArr) => {
   return arr;
 };
 
-console.log(data);
-console.log(sortB(data));
-console.log(sortB(data1));
-console.log(sortB(data2));
+// console.log(data);
+// console.log(sortB(data));
+// console.log(sortB(data1));
+// console.log(sortB(data2));
