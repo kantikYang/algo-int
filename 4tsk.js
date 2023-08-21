@@ -26,4 +26,4 @@ const dfs = (obj) => {
   return res;
 };
 
-console.log(dfs(data));
+// console.log(dfs(data));
