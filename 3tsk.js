@@ -3,7 +3,6 @@ const insertionSort = (target) => {
   const len = target.length;
 
   for (let i = 1; i < len; i++) {
-    const curr = target[i];
     res.push(target[i]);
 
     for (let j = res.length - 1; j > 0; j--) {
